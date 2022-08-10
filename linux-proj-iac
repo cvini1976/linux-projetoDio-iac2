@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Autor: Carlos Vinicios
+# Data: 08/08/2022
+
+# Descrição: Script para atualizar o ambiente do server Debian ou Ubuntu, instalar o Apache2,
+# e permissoes...
+
+echo "---Atualizando o ambiente do server Debian ou Ubuntu e Instalando o Apache---"
+
+sudo apt update && sudo apt upgrade -y 
+
+#Instalando o server web Apache2 e o desempacotador unzip
+
+sudo apt install apache2 -y && sudo apt install unzip -y
+
+#Baixar a aplicação diponivel no GITHUB para diretorio tmp
+
+sudo wget https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip /tmp/
+
+#Decompactar o main no diretorio tmp e depois copiar o main para o /var/www/html
+
+sudo unzip main.zip 
+
+cd linux-site-dio-main
+
+sudo cp -R * /var/www/html
