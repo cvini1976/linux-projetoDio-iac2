@@ -3,8 +3,7 @@
 # Autor: Carlos Vinicios
 # Data: 08/08/2022
 
-# Descrição: Script para atualizar o ambiente do server Debian ou Ubuntu, instalar o Apache2,
-# e permissoes...
+# Descrição: Script para atualizar o ambiente do server Debian ou Ubuntu, instalar o Apache...
 
 echo "---Atualizando o ambiente do server Debian ou Ubuntu e Instalando o Apache---"
 
